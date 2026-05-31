@@ -138,6 +138,9 @@
                 다운로드
               </span>
             )}
+            {project.demoUrl && project.demoUrl.endsWith(".exe") && (
+              <p className="text-xs text-gray-400" style={{ marginTop: "10px", lineHeight: 1.6 }}>⚠️ 실행 시 'Windows의 PC 보호' 경고가 뜨면 <b>추가 정보 → 실행</b>을 누르세요. 다운로드가 차단되면 파일 우클릭 → <b>속성 → 차단 해제</b> 후 실행하면 됩니다.</p>
+            )}
           </div>
         </div>
       );
